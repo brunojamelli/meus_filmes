@@ -6,7 +6,7 @@ class DatabaseHelper {
   factory DatabaseHelper() => _instance;
   static Database? _database;
 
-  DatabaseHelper._internal();
+  DatabaseHelper._internal(); // Construtor privado
 
   Future<Database> get database async {
     if (_database != null) return _database!;
